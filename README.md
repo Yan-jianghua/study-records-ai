@@ -11,4 +11,28 @@
 
 ## 当前状态
 
-工程初始化阶段，业务功能尚未实现。
+已实现GET /health健康接口，返回{"status":"ok"}。
+学习记录CRUD和AI功能仍在计划中。
+
+## 安装依赖
+
+先按照docs/dev-setup.md创建虚拟环境，再在项目根目录执行：
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+```
+
+## 启动服务
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --reload
+```
+
+健康接口：http://127.0.0.1:8000/health
+接口文档：http://127.0.0.1:8000/docs
+
+## 运行测试
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+```

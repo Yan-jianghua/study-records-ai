@@ -7,3 +7,4 @@ __pycache__/
 .idea/
 .vscode/
 /记忆与其他/
+.pytest_cache/
